@@ -1,0 +1,52 @@
+legend{
+    color: aliceblue;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px aliceblue;
+    font-family: "Lavishly Yours", cursive;
+}
+
+h1{
+    font-family: "sans-serif", serif;
+    color: transparent;
+    font-style: italic;
+    background-image: linear-gradient(45deg, white, orange, red, darkred);
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/012/410/341/small/premium-security-cyber-digital-concept-abstract-technology-background-protect-system-innovation-for-business-illustration-vector.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+fieldset {
+  border: none;
+  box-shadow: 10px 10px 50px aliceblue;
+  border-radius: 10px 50px;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  animation-name: scaling;
+  animation-duration: 5s;
+}
+
+fieldset>P{
+    color: rgb(225, 174, 8);
+    font-family: "sans-serif", serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px aliceblue;
+}
+button{
+    padding: 10px 30px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+}

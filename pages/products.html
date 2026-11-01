@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop ThinkMart's collection of tech, home goods, and everyday accessories.">
+    <title>Shop all — ThinkMart</title>
+    <link rel="stylesheet" href="../Styles/store.css">
+    <script src="../scripts/store.js" defer></script>
+</head>
+<body data-page="products">
+    <div id="site-header"></div>
+    <main class="container section-space">
+        <p class="eyebrow">The ThinkMart collection</p>
+        <h1>Shop all</h1>
+        <p style="max-width:600px;color:var(--muted);line-height:1.7">Useful, lovely things for everyday life. Find your next favourite below.</p>
+        <div class="shop-toolbar" role="search">
+            <label class="screen-reader-only" for="product-search">Search products</label>
+            <input id="product-search" type="search" placeholder="Search products…" autocomplete="off">
+            <label class="screen-reader-only" for="category-filter">Filter by category</label>
+            <select id="category-filter">
+                <option value="all">All categories</option>
+                <option value="Tech">Tech</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Home">Home</option>
+            </select>
+            <label class="screen-reader-only" for="sort-products">Sort products</label>
+            <select id="sort-products">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: low to high</option>
+                <option value="price-high">Price: high to low</option>
+                <option value="rating">Top rated</option>
+            </select>
+        </div>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+        <div id="product-grid" class="product-grid"></div>
+    </main>
+    <div id="site-footer"></div>
+    <div id="live-status" role="status"></div>
+</body>
+</html>

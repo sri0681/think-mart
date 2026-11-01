@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cart — ThinkMart</title>
+    <link rel="stylesheet" href="../Styles/store.css">
+    <script src="../scripts/store.js" defer></script>
+</head>
+<body data-page="cart">
+    <div id="site-header"></div>
+    <main class="container section-space">
+        <p class="eyebrow">Almost yours</p>
+        <h1>Your cart</h1>
+        <div class="cart-layout">
+            <section id="cart-items" class="cart-items" aria-label="Products in your cart"></section>
+            <aside id="cart-summary" class="summary-card" aria-label="Order summary">
+                <h2>Order summary</h2>
+                <div class="summary-line"><span>Subtotal</span><span id="subtotal"></span></div>
+                <div class="summary-line"><span>Delivery</span><span id="shipping"></span></div>
+                <p id="shipping-note" class="summary-note"></p>
+                <div class="summary-line total"><span>Total</span><span id="total"></span></div>
+                <p class="summary-note">No payment is collected in this demo.</p>
+            </aside>
+        </div>
+        <section id="checkout-section" class="checkout-layout">
+            <form id="checkout-form" class="form-card">
+                <p class="eyebrow">Guest checkout</p>
+                <h2>Delivery details</h2>
+                <p class="checkout-notice">Place your order without entering payment details. This demo saves the order in your browser and does not process a payment or arrange real delivery.</p>
+                <div class="checkout-fields">
+                    <label class="field" for="customer-name">Full name
+                        <input id="customer-name" name="name" autocomplete="name" required minlength="2" maxlength="80">
+                    </label>
+                    <label class="field" for="customer-email">Email
+                        <input id="customer-email" name="email" type="email" autocomplete="email" required maxlength="254">
+                    </label>
+                    <label class="field" for="customer-phone">Phone
+                        <input id="customer-phone" name="phone" type="tel" autocomplete="tel" required minlength="7" maxlength="20">
+                    </label>
+                    <label class="field field-full" for="customer-address">Street address
+                        <input id="customer-address" name="address" autocomplete="street-address" required maxlength="160">
+                    </label>
+                    <label class="field" for="customer-city">City
+                        <input id="customer-city" name="city" autocomplete="address-level2" required maxlength="80">
+                    </label>
+                    <label class="field" for="customer-postal">Postal code
+                        <input id="customer-postal" name="postalCode" autocomplete="postal-code" required minlength="4" maxlength="12">
+                    </label>
+                    <button class="button" type="submit">Place demo order</button>
+                </div>
+            </form>
+            <aside class="content-panel">
+                <p class="eyebrow">Simple and transparent</p>
+                <h2>What happens next?</h2>
+                <p>Your cart becomes a saved order, and you can review it from your account on this browser. There is no payment step, email service, or live fulfillment connected to this demo.</p>
+            </aside>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <div id="live-status" role="status"></div>
+</body>
+</html>
